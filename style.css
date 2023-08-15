@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #18181b;
+}
+
+img{
+    width: 600px;
+    margin-bottom: 24px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.texto-tamanho{
+    color: #fff;
+    font-size: 22px;
+}
+
+.input{
+    margin: 10px 0 30px 0;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    height: 18px;
+    width: 100%;
+    background: #dfdfdf;
+    outline: none;
+}
+
+button{
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #3eb72b;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div{
+    max-width: 480px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.titulo-senha{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.senha{
+    border: 1px solid #313131;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(0, 0, 0, 0.40);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.5s;
+    margin-top: 20px;
+}
+
+.senha:hover{
+    transform: scale(1.05);
+}
+
+.clique{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 6px 8px;
+    background-color: #151515;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+div:hover .clique{
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide{
+    display: none;
+}
+
